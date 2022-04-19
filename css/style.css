@@ -1,0 +1,135 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+.attribution {
+  background-color: hsl(229, 57%, 11%);
+}
+.attribution a {
+  color: hsl(242, 54%, 65%);
+}
+header {
+  height: 96vh;
+  background-color: hsl(229, 57%, 11%);
+}
+.component {
+  background-image: url(../images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.folders p {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: hsl(229, 57%, 11%);
+}
+.component-desc {
+  top: -65px;
+}
+.logo {
+  margin-bottom: 25px;
+}
+.logo img {
+  width: 120px;
+}
+.folders p img {
+  width: 20px;
+}
+.left-section {
+  padding: 30px;
+  padding-right: 90px;
+  border-radius: 8px 88px 8px 8px;
+  border: 1px solid hsl(228, 56%, 26%);
+  background-color: hsl(228, 56%, 26%);
+}
+.right-section {
+  background-color: hsl(228, 56%, 26%);
+  padding: 30px 35px;
+  border-radius: 8px;
+}
+.right-section p {
+  color: hsl(242, 75%, 83%);
+  font-size: 13px;
+}
+.progress {
+  height: 14px;
+  border-radius: 10px;
+  background-color: hsl(229, 57%, 11%);
+}
+.progress-bar {
+  background: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  height: 12px;
+  border-radius: 12px;
+  width: 70%;
+}
+.dot {
+  width: 9px;
+  height: 9px;
+  margin-right: 1px;
+}
+.volume span {
+  font-size: 12px;
+  color: hsl(242, 54%, 90%);
+}
+.text-box {
+  padding: 3px 20px;
+  border-radius: 9px;
+  border-bottom-right-radius: 0;
+  top: -36px;
+  right: 27px;
+}
+.text-box p {
+  font-size: 35px;
+  margin-right: 10px;
+}
+.text-box span {
+  font-size: 12px;
+  color: rgb(159, 151, 151);
+}
+.text-box a {
+  right: 15px;
+}
+
+.text-box a::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 20px 0px 0px 15px;
+  border-color: #fff transparent transparent transparent;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .left-section {
+    margin-bottom: 20px;
+  }
+  .text-box {
+    right: 50%;
+    top: 78%;
+    transform: translateX(50%);
+    border-bottom-right-radius: 9px;
+  }
+  .text-box a {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .volume {
+    margin-bottom: 20px;
+  }
+  header {
+    background-color: none;
+    background-image: url(../images/bg-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .component {
+    background-image: none;
+  }
+}
